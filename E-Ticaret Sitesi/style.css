@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+* {
+  font-family: "Montserrat", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+/*! MAİN CSS CODES  */
+:root {
+  --black: #1c2a39;
+  --gray: #5c6a79;
+  --purple: #4c3db2;
+}
+
+body {
+  height: 200vh;
+}
+
+.primary-btn {
+  font-size: 14px;
+  background-color: white;
+  padding: 10px 70px;
+  cursor: pointer;
+  font-weight: bold;
+  color: var(--purple);
+  border: 2px solid var(--purple);
+  transition: 0.2s ease;
+}
+
+.primary-btn:hover {
+  color: white;
+  background-color: var(--purple);
+}
+
+/*! NAVBAR  */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 120px;
+  width: 80%;
+  margin-left: 10%;
+  border-bottom: 0.1px solid rgba(196, 196, 196, 0.9);
+  margin-bottom: 50px;
+}
+
+.menu,
+.menu-icons {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+  color: var(--gray);
+  cursor: pointer;
+}
+
+.menu-icons li,
+.menu li {
+  margin: 0 10px;
+}
+
+.menu li:hover {
+  color: var(--black);
+  border-bottom: 0.1px solid rgba(73, 73, 73, 0.4);
+}
+
+.menu-icons li:hover {
+  color: black;
+}
+
+/*! SLİDER  */
+
+.main .slider-container {
+  position: relative;
+  width: 80%;
+  overflow: hidden;
+  margin-left: 10%;
+}
+
+.main .slider-container .slider {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.main .slider .slide {
+  flex: 0 0 100%;
+}
+
+.main .slider .slide img {
+  width: 100%;
+  height: auto;
+}
+
+.prev-btn,
+.next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.prev-btn {
+  left: 0;
+}
+
+.next-btn {
+  right: 0;
+}
+
+.prev-btn,
+.next-btn {
+  background: transparent;
+  font-size: 50px;
+  color: var(--gray);
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+  color: black;
+}
+
+/*! BOOKS  */
+
+.sidebar-books-container {
+  display: flex;
+}
+
+.sidebar {
+  position: absolute;
+  width: 400px;
+  height: 1200px;
+  margin-top: 3%;
+  margin-left: 10%;
+  background-color: #efeef6;
+  z-index: -1;
+  padding: 25px 50px;
+}
+
+.sidebar ul {
+  font-size: 24px;
+  line-height: 40px;
+  list-style-type: none;
+}
+
+
+
+.sidebar ul li button {
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.books {
+  width: 60%;
+  margin-top: 3%;
+  margin-left: 25%;
+}
+
+.books .books-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+  gap: 20px;
+}
+
+.books .books-container .book {
+  column-gap: 20px;
+  display: flex;
+}
+
+.books .books-container .book .book-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.books .books-container .book .book-img {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.books .books-container .book .book-img img {
+  transition: transform 0.3s ease;
+}
+
+.books .books-container .book .book-img:hover img {
+  transform: scaleX(1.1);
+  opacity: 0.6;
+}
+
+.books .books-container .book .book-content .book-writer {
+  color: var(--gray);
+}
+
+.books .books-container .book .book-content h1 {
+  margin: 5px 0;
+}
+
+.books .books-container .book .book-content .book-rating {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.books .books-container .book .book-content .book-rating .stars {
+  color: goldenrod;
+}
+
+.books .books-container .book .book-content .book-rating .review {
+  font-size: smaller;
+}
+
+.books .books-container .book .book-content .book-about {
+  color: var(--gray);
+  font-size: medium;
+  margin-bottom: 30px;
+}
+
+.books .books-container .book .book-content .price {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.books h1 {
+  border-bottom: 1px solid #5c6a79;
+  margin-bottom: 45px;
+  padding-bottom: 10px;
+}

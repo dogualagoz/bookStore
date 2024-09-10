@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yazılım Mektebi | Kitap Mağazası</title>
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--!---------------NAVBAR--------------------------------------------------->
+
+    <nav class="navbar">
+      <h2 class="title">Bookshop</h2>
+      <ul class="menu">
+        <li>Books</li>
+        <li>AUDİOBOOKS</li>
+        <li>GİFTS</li>
+        <li>ABOUT</li>
+      </ul>
+      <ul class="menu-icons">
+        <li><i class="bi bi-person"></i></li>
+        <li><i class="bi bi-search"></i></li>
+        <li><i class="bi bi-bag"></i></li>
+      </ul>
+    </nav>
+    <!--!---------------MAİN---------------------------------------------------------->
+
+    <section class="main">
+      <!--TODO--------------SLİDER--------------------------------------------------->
+      <div class="slider-container">
+        <div class="slider">
+          <div class="slide">
+            <img src="./images/slide1.png" alt="Resim 1" />
+          </div>
+          <div class="slide">
+            <img src="./images/slide2.png" alt="Resim 2" />
+          </div>
+          <div class="slide">
+            <img src="./images/slide3.png" alt="Resim 3" />
+          </div>
+        </div>
+        <button class="bi bi-chevron-left arrow prev-btn"></button>
+        <button class="bi bi-chevron-right arrow next-btn"></button>
+      </div>
+    </section>
+
+    <!--TODO--------------------------BOOKS---------------------------------------------------------------->
+
+    <section class="sidebar-books-container">
+
+      <section class="sidebar">
+        <div class="sidebar-container">
+          <ul>
+            <li class="main"><button>Tümü</button></li>
+            <li><button>Kişisel Gelişim</button></li>
+            <li><button>Roman</button></li>
+            <li><button>Finans</button></li>
+            <li><button>Çocuk</button></li>
+            <li><button>Bilim</button></li>
+            <li><button>Tarih</button></li>
+          </ul>
+        </div>
+      </section>
+
+
+      <section class="books">
+        <h1>Books on sale</h1>
+        <div class="books-container">
+          <div class="book">
+            <div class="book-img">
+              <img src="./images/books/alayci-kus.jpg" alt="" />
+            </div>
+            <div class="book-content">
+              <span class="book-writer">Suzanne Collins</span>
+              <h1>Açlık Oyunları 3 - Alaycı Kuş</h1>
+              <div class="book-rating">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <p class="review">560 reviews</p>
+              </div>
+              <p class="book-about">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum
+                cumque voluptate accusantium, amet ratione aliquid?
+              </p>
+              <span class="price">40.89 TL</span>
+              <button class="primary-btn">ADD BASKET</button>
+            </div>
+          </div>
+          <div class="book">
+            <div class="book-img">
+              <img src="./images/books/alayci-kus.jpg" alt="" />
+            </div>
+            <div class="book-content">
+              <span class="book-writer">Suzanne Collins</span>
+              <h1>Açlık Oyunları 3 - Alaycı Kuş</h1>
+              <div class="book-rating">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <p class="review">560 reviews</p>
+              </div>
+              <p class="book-about">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum
+                cumque voluptate accusantium, amet ratione aliquid?
+              </p>
+              <span class="price">40.89 TL</span>
+              <button class="primary-btn">ADD BASKET</button>
+            </div>
+          </div>
+          <div class="book">
+            <div class="book-img">
+              <img src="./images/books/alayci-kus.jpg" alt="" />
+            </div>
+            <div class="book-content">
+              <span class="book-writer">Suzanne Collins</span>
+              <h1>Açlık Oyunları 3 - Alaycı Kuş</h1>
+              <div class="book-rating">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <p class="review">560 reviews</p>
+              </div>
+              <p class="book-about">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum
+                cumque voluptate accusantium, amet ratione aliquid?
+              </p>
+              <span class="price">40.89 TL</span>
+              <button class="primary-btn">ADD BASKET</button>
+            </div>
+          </div>
+          <div class="book">
+            <div class="book-img">
+              <img src="./images/books/alayci-kus.jpg" alt="" />
+            </div>
+            <div class="book-content">
+              <span class="book-writer">Suzanne Collins</span>
+              <h1>Açlık Oyunları 3 - Alaycı Kuş</h1>
+              <div class="book-rating">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <p class="review">560 reviews</p>
+              </div>
+              <p class="book-about">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum
+                cumque voluptate accusantium, amet ratione aliquid?
+              </p>
+              <span class="price">40.89 TL</span>
+              <button class="primary-btn">ADD BASKET</button>
+            </div>
+          </div>
+          <div class="book">
+            <div class="book-img">
+              <img src="./images/books/alayci-kus.jpg" alt="" />
+            </div>
+            <div class="book-content">
+              <span class="book-writer">Suzanne Collins</span>
+              <h1>Açlık Oyunları 3 - Alaycı Kuş</h1>
+              <div class="book-rating">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <p class="review">560 reviews</p>
+              </div>
+              <p class="book-about">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum
+                cumque voluptate accusantium, amet ratione aliquid?
+              </p>
+              <span class="price">40.89 TL</span>
+              <button class="primary-btn">ADD BASKET</button>
+            </div>
+          </div>
+          <div class="book">
+            <div class="book-img">
+              <img src="./images/books/alayci-kus.jpg" alt="" />
+            </div>
+            <div class="book-content">
+              <span class="book-writer">Suzanne Collins</span>
+              <h1>Açlık Oyunları 3 - Alaycı Kuş</h1>
+              <div class="book-rating">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <p class="review">560 reviews</p>
+              </div>
+              <p class="book-about">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum
+                cumque voluptate accusantium, amet ratione aliquid?
+              </p>
+              <span class="price">40.89 TL</span>
+              <button class="primary-btn">ADD BASKET</button>
+            </div>
+          </div>
+          <div class="book">
+            <div class="book-img">
+              <img src="./images/books/alayci-kus.jpg" alt="" />
+            </div>
+            <div class="book-content">
+              <span class="book-writer">Suzanne Collins</span>
+              <h1>Açlık Oyunları 3 - Alaycı Kuş</h1>
+              <div class="book-rating">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <p class="review">560 reviews</p>
+              </div>
+              <p class="book-about">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum
+                cumque voluptate accusantium, amet ratione aliquid?
+              </p>
+              <span class="price">40.89 TL</span>
+              <button class="primary-btn">ADD BASKET</button>
+            </div>
+          </div>
+          <div class="book">
+            <div class="book-img">
+              <img src="./images/books/alayci-kus.jpg" alt="" />
+            </div>
+            <div class="book-content">
+              <span class="book-writer">Suzanne Collins</span>
+              <h1>Açlık Oyunları 3 - Alaycı Kuş</h1>
+              <div class="book-rating">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <p class="review">560 reviews</p>
+              </div>
+              <p class="book-about">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum
+                cumque voluptate accusantium, amet ratione aliquid?
+              </p>
+              <span class="price">40.89 TL</span>
+              <button class="primary-btn">ADD BASKET</button>
+            </div>
+          </div>
+          <div class="book">
+            <div class="book-img">
+              <img src="./images/books/alayci-kus.jpg" alt="" />
+            </div>
+            <div class="book-content">
+              <span class="book-writer">Suzanne Collins</span>
+              <h1>Açlık Oyunları 3 - Alaycı Kuş</h1>
+              <div class="book-rating">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <p class="review">560 reviews</p>
+              </div>
+              <p class="book-about">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum
+                cumque voluptate accusantium, amet ratione aliquid?
+              </p>
+              <span class="price">40.89 TL</span>
+              <button class="primary-btn">ADD BASKET</button>
+            </div>
+          </div>
+          <div class="book">
+            <div class="book-img">
+              <img src="./images/books/alayci-kus.jpg" alt="" />
+            </div>
+            <div class="book-content">
+              <span class="book-writer">Suzanne Collins</span>
+              <h1>Açlık Oyunları 3 - Alaycı Kuş</h1>
+              <div class="book-rating">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <p class="review">560 reviews</p>
+              </div>
+              <p class="book-about">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum
+                cumque voluptate accusantium, amet ratione aliquid?
+              </p>
+              <span class="price">40.89 TL</span>
+              <button class="primary-btn">ADD BASKET</button>
+            </div>
+          </div>
+          <div class="book">
+            <div class="book-img">
+              <img src="./images/books/alayci-kus.jpg" alt="" />
+            </div>
+            <div class="book-content">
+              <span class="book-writer">Suzanne Collins</span>
+              <h1>Açlık Oyunları 3 - Alaycı Kuş</h1>
+              <div class="book-rating">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <p class="review">560 reviews</p>
+              </div>
+              <p class="book-about">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum
+                cumque voluptate accusantium, amet ratione aliquid?
+              </p>
+              <span class="price">40.89 TL</span>
+              <button class="primary-btn">ADD BASKET</button>
+            </div>
+          </div>
+          <div class="book">
+            <div class="book-img">
+              <img src="./images/books/alayci-kus.jpg" alt="" />
+            </div>
+            <div class="book-content">
+              <span class="book-writer">Suzanne Collins</span>
+              <h1>Açlık Oyunları 3 - Alaycı Kuş</h1>
+              <div class="book-rating">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <p class="review">560 reviews</p>
+              </div>
+              <p class="book-about">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum
+                cumque voluptate accusantium, amet ratione aliquid?
+              </p>
+              <span class="price">40.89 TL</span>
+              <button class="primary-btn">ADD BASKET</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+    </section>
+
+    <script
+      type="text/javascript"
+      src="assets/bootstrap/js/bootstrap.min.js"
+    ></script>
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>
